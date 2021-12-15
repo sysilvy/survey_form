@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/survey_form.css">
+</head>
+<body>
+	<div class="b-img">
+
+	<div class="title">
+		<h1 id="title"> University of the People Survey Form </h1>
+		<p id="description"><em> Your opinion will help us improve the organization</em> </p>
+	</div>
+
+		<div id="form">
+			<form id="survey-form">
+
+				<div class="name">
+					<label id="name-label" for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Enter you name" required><br>
+				</div>
+
+				<div class="email">
+					<label id="email-label" for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Enter you email" required><br>
+				</div>
+
+				<div class="age">
+					<label id="number-label" for="number">Age:</label>
+					<input type="number" id="number" name="number" min="16" max="30" placeholder="Age" ><br>
+				</div>
+
+				<div class="select">
+					<p>Which one narrates your educational experience?</p>
+					<select name="dropdown" id="dropdown" >
+						<option value="select" disabled selected hidden>Select an option</option>
+	  					<option value="high school">High School Diploma</option>
+	  					<option value="undergrad">Undergrad</option>
+	  					<option value="graduate">Graduate</option>
+	  					<option value="private">Private</option>
+					</select>
+				</div>
+
+				<div class="radio">
+					<p>Choose a degree:</p>
+					<input type="radio" name="radio" id="cs" value="Computer Science" checked>
+					<label for="cs">Computer Science</label><br>
+					<input type="radio" name="radio" id="hs" value="Health Science">
+					<label for="hs">Health Science</label><br>
+					<input type="radio" name="radio" id="ba" value="Business Administration">
+					<label for="ba">Business Administration</label><br>
+					<input type="radio" name="radio" id="edu" value="Education">
+					<label for="edu">Education</label><br>
+				</div>
+
+				<div class="checkbox">
+					<p>Which of the following additional courses would you like to take?
+					</p>
+					<input type="checkbox" id="eng1" name="eng1" value="eng1">
+					<label for="eng1">English 1102</label><br>
+					<input type="checkbox" id="eng2" name="eng2" value="eng2">
+					<label for="eng2">English 1103</label><br>
+					<input type="checkbox" id="calculus" name="calculus" value="calculus">
+					<label for="calculus">Calculus 301</label><br>
+					<input type="checkbox" id="calculus2" name="calculus2" value="calculus2">
+					<label for="calculus2">Caculus 302</label><br>
+					<input type="checkbox" id="earth" name="earth" value="earth">
+					<label for="earth">Earth Science</label><br>
+					<input type="checkbox" id="rel" name="rel" value="rel">
+					<label for="rel">Religion</label><br>
+					<input type="checkbox" id="code" name="code" value="code">
+					<label for="code">Programming 03</label><br>
+					<input type="checkbox" id="it" name="it" value="it">
+					<label for="it">Information and Technology</label><br>
+					<input type="checkbox" id="none" name="none" value="none">
+					<label for="it">None</label><br>
+				</div>
+
+				<div class="scholarship">
+					<p>Do you want a scholarship?</p>
+					<input type="radio" name="radio" id="radio" value="yes" checked>
+					<label for="radio">Yes</label><br>
+					<input type="radio" name="radio" id="radio" value="no">
+					<label for="radio">No</label><br>
+
+					<label for="yes">If you selected yes, explain why?</label><br>
+					<textarea id="yes" name="yes" rows="4" cols="30" ></textarea><br>
+				</div>
+
+				<input id="submit" type="submit" value="Submit"><br>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
